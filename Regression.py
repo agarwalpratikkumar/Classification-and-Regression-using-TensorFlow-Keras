@@ -136,7 +136,7 @@ plt.ylim(plt.ylim())
 _ = plt.plot([-100, 100], [-100, 100])
 plt.show()
 
-#To get an overoview of the error
+#To get an overview of the error
 error = test_predictions - test_labels
 plt.hist(error, bins = 50)
 plt.xlabel("Prediction Error [1000$]")
