@@ -3,12 +3,6 @@ from tensorflow import keras    #"tf.keras" is a high level api to build and tra
 import numpy as np
 import matplotlib.pyplot as plt
 
-hello = tf.constant('hello, Tensorflow')
-sess = tf.Session()
-print(sess.run(hello))
-
-print("TensorFlow Version: ", tf.__version__)  #To print the tensorflow version
-
 fashion_mnist = keras.datasets.fashion_mnist    #here we are taking/importing fashion_mnist dataset from keras database.
 (train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()  #here we are loading the dataset
 
